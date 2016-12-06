@@ -48,9 +48,13 @@ if(!function_exists('del_add_item_data'))
         //Unset our custom session variable, as it is no longer needed.
     }
 }
+
+
 Step 3: Extract Custom Data from WooCommerce Session and Insert it into Cart Object
 
+
 At this stage, we have default product details along with the custom data in the WooCommerce session. The default data gets added to the cart object owing to the functionality provided by the plugin. However, we need to explicitly extract the custom data from the WooCommerce session and insert it into the cart object. This can be implemented with the following code.
+
 
 add_filter('woocommerce_get_cart_item_from_session', 'del_get_cart_items_from_session', 1, 3 );
 if(!function_exists('del_get_cart_items_from_session'))
@@ -64,6 +68,9 @@ if(!function_exists('del_get_cart_items_from_session'))
         return $item;
     }
 }
+
+
 Step 4: Display User Custom Data on Cart and Checkout page
+
 
 Now that we have our custom data in the cart object all we need to do now is to display this data in the Cart and the Checkout page. This is how your cart page should look after the custom data has been added from the WooCommerce session to your Cart. My-Cart-Page
