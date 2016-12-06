@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Update Cart Items in Woocommerce
  * Plugin URI: https://github.com/Delgesh/Update-Cart-items-in-Woocommerce
- * Description: Add delivery wizard admin page to this site (w/taxonomies)
+ * Description: Update Cart items in Woocommerce using Sessions
  * Version: 1.0
  * Author: Delgesh Shahab
  * Author URI: https://github.com/Delgesh/
