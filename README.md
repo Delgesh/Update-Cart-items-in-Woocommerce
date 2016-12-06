@@ -17,6 +17,7 @@ function del_add_user_custom_data_options_callback()
       $_SESSION['del_user_custom_data'] = $user_custom_data_values;
       die();
 }
+ 
 Step 2: Add Custom Data in WooCommerce Session
 
 At this step, the WooCommerce session has been created and is now available for us to add our custom data. We use the following code to add the custom data from the session we have created into the WooCommerce session. At this step, our session is also unset since the data in it has been captured and it is not needed anymore.
